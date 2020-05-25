@@ -5,7 +5,7 @@ function Search ({onSearch, searchTerm, handleSortByName, handleSortByDept}){
     <div className="container">
         <div className="buttonContainer">
             <button onClick ={handleSortByName} className="sortByNameBtn">Name</button>
-            <button onClick ={handleSortByDept} className="sortByNameBtn">Department</button>
+            <button onClick ={handleSortByDept} className="sortByNameBtn">Phone</button>
         </div>
         <div className="employeeSearchContainer">
             <form>

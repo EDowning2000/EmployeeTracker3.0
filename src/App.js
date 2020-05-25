@@ -60,7 +60,7 @@ function App (){
         <Search
             handleSortByName = {handleSortByName}
             handleSortByDept = {handleSortByDept}
-            searchTerm = {searchTerm}
+            value = {setSearchTerm}
             onSearch = {handleSearchTerm}
             
         
@@ -72,8 +72,8 @@ function App (){
                 lastName = {employee.name.last}
                 email = {employee.email}
                 image = {employee.picture.medium}
-                phone = {employee.phone}
-                //  dept = {employee.}
+                // phone = {employee.phone}
+                dept = {employee.phone}
                 
              />
            ))}
