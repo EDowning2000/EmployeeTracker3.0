@@ -1,9 +1,13 @@
 @import url('https://https://fonts.google.com/specimen/Bebas+Neue');
 
+.wrapper{
+  background-color: ;
+}
+
 .headerContainer{
   background-color: #F4FF01 ;
-  margin-right: -10px;
-  margin-left: -10px;
+  margin-right: 10px;
+  margin-left:10px;
 }
 .description{
   font-family: "Bebas Neue", sans-serif;
@@ -45,4 +49,14 @@ ul{
 }
 .photo{
   width: 90px;
+}
+.footer{
+  text-align:center;
+  font-family: "Bebas Neue", sans-serif;
+  background-color: #F4FF01;
+  margin-top: -17px;
+  margin-right: 10px;
+  margin-left:10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
