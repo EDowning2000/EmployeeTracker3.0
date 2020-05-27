@@ -2,15 +2,18 @@ import React from 'react'
 
 function Employee({ firstName, lastName, image, dept, email, phone }){
   return (
-    <div className="container">
+    <div className="employeeContainer">
       <img
+        className="photo"
         src ={image}
         alt= 'Employee Photo'
       />
-        <p className="name">{ firstName } { lastName }</p>
-        <p className="email"> { email }</p>
-        <p className="phone">{ phone }</p>
-        <p className="department">{ dept }</p>
+      <br></br>
+        <span className="name">{ firstName } { lastName }</span>
+        <br></br>
+        <span className="email"> { email }</span>
+        <br></br>
+        <span className="dept">{ dept }</span>
           <hr></hr>
     </div>
   )
