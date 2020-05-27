@@ -11,6 +11,7 @@ function Employee({ firstName, lastName, image, dept, email, phone }){
         <p className="email"> { email }</p>
         <p className="phone">{ phone }</p>
         <p className="department">{ dept }</p>
+          <hr></hr>
     </div>
   )
 }

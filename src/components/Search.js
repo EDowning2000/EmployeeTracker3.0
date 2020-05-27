@@ -2,7 +2,7 @@ import React from 'react'
 
 function Search ({onSearch, searchTerm, handleSortByName, handleSortByDept}){
   return (
-    <div className="container">
+    <div className="serachContainer">
         <div className="buttonContainer">
             <button onClick ={handleSortByName} className="sortByNameBtn">Name</button>
             <button onClick ={handleSortByDept} className="sortByNameBtn">Phone</button>
@@ -10,10 +10,11 @@ function Search ({onSearch, searchTerm, handleSortByName, handleSortByDept}){
         <div className="employeeSearchContainer">
             <form>
               <input 
+                className="search"
                 value ={searchTerm}
                 onChange={onSearch}
                 type="text"
-                placeholder="Search Employee" />
+                placeholder="Search Employee!" />
             </form>
         </div> 
     </div> //main container div

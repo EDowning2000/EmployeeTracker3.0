@@ -5,10 +5,12 @@ import React from "react"
 function Header (){
   return (
     <div className=''>
-      <header className='container'>
+      <header className='headerContainer'>
         {/* <img className='' src={schoolLogo} alt='UCF School Logo'/> */}
           <h2 className="headerText"> Employee Tracker </h2>
-            <a href="https://github.com/EDowning2000/employee-tracker">This projects source Code.</a>
+            <h5 className="description">
+              An application to Browse the Profiles of your Employees!
+            </h5>
       </header>
     </div>
   )

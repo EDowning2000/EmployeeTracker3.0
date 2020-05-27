@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Search from './components/Search';
 import API from './utils/API';
 
+
 function App (){
   const [searchTerm, setSearchTerm] = useState('');
   const [sorted, setSorted] = useState(false);
@@ -60,10 +61,8 @@ function App (){
         <Search
             handleSortByName = {handleSortByName}
             handleSortByDept = {handleSortByDept}
-            value = {setSearchTerm}
+            value = {searchTerm}
             onSearch = {handleSearchTerm}
-            
-        
         />
          <ul>
            {data.map(employee=>(
@@ -74,6 +73,7 @@ function App (){
                 image = {employee.picture.medium}
                 // phone = {employee.phone}
                 dept = {employee.phone}
+                
                 
              />
            ))}
