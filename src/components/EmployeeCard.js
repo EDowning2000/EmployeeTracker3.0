@@ -2,6 +2,7 @@ import React from 'react'
 
 function Employee({ firstName, lastName, image, dept, email, phone }){
   return (
+  <div>
     <div className="employeeContainer">
       <img
         className="photo"
@@ -14,8 +15,10 @@ function Employee({ firstName, lastName, image, dept, email, phone }){
         <span className="email"> { email }</span>
         <br></br>
         <span className="dept">{ dept }</span>
-          <hr></hr>
+        
     </div>
+     <hr className="hr"></hr>
+     </div>
   )
 }
  

@@ -8,22 +8,32 @@ import API from './utils/API';
 
 
 function App (){
-  const [searchTerm, setSearchTerm] = useState('');
   const [sorted, setSorted] = useState(false);
   const [data, setEmployees] = useState([]);
+  const [allEmployees, setAllEmployees] = useState([]);
 
   useEffect(()=>{
 
     API.getUsers().then(response =>{
       console.log(response.data.results); //console logging all employees
       setEmployees(response.data.results); //sets the employee state
+      setAllEmployees(response.data.results)
     })
       .catch(err => console.log(err)) //err handling
   },[])
 
   const handleSearchTerm=(event)=>{ //reloads the state of the search term everytime you type and therefore makes it constantly changing as you type
     event.preventDefault();
-    setSearchTerm(event.target.value) //setting the search terms state to the value in the input
+    const searchTerm= event.target.value
+
+    if(!searchTerm){
+      setEmployees(allEmployees)
+      return
+    }
+
+
+    const filteredEmployees = allEmployees.filter (employee => employee.name.first.toLowerCase().startsWith(searchTerm.toLowerCase()));
+    setEmployees(filteredEmployees)
   }
 
   const handleSortByName=(event)=>{
@@ -52,7 +62,6 @@ function App (){
       }
   }
 
-  const filteredEmployees = data.filter (employee => employee.name.first.toLowerCase().startsWith(searchTerm.toLowerCase())); //this is just the employees that you type into the search bar
 
   return (
     <Wrapper>
@@ -61,7 +70,7 @@ function App (){
         <Search
             handleSortByName = {handleSortByName}
             handleSortByDept = {handleSortByDept}
-            value = {searchTerm}
+            
             onSearch = {handleSearchTerm}
         />
          <ul>

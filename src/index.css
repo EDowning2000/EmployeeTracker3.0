@@ -1,9 +1,5 @@
 @import url('https://https://fonts.google.com/specimen/Bebas+Neue');
 
-.wrapper{
-  background-color: ;
-}
-
 .headerContainer{
   background-color: #F4FF01 ;
   margin-right: 10px;
@@ -41,15 +37,35 @@ form{
 }
 .employeeContainer{
   margin-right: 30px;
-  margin-left: 30px
+  margin-left: 30px;
+  background-color: #F3F3EE;
+  border-radius: 20px;
+  box-shadow: 10px;
+}
+.hr{
+  margin-top: 10px;
+  width: 93%;
+}
+.photo{
+  padding-left: 30px;
+  padding-top: 15px;
+  border-radius:10px;
+  width: 90px;
+}
+.name{
+  padding-left:30px ;
+}
+.email{
+  padding-left: 30px;
+}
+.dept{
+  padding-left: 30px;
 }
 ul{
   padding-left: 50px;
   padding-right: 50px
 }
-.photo{
-  width: 90px;
-}
+
 .footer{
   text-align:center;
   font-family: "Bebas Neue", sans-serif;

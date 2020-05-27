@@ -11,7 +11,7 @@ function Search ({onSearch, searchTerm, handleSortByName, handleSortByDept}){
             <form>
               <input 
                 className="search"
-                value ={searchTerm}
+                
                 onChange={onSearch}
                 type="text"
                 placeholder="Search Employee!" />
