@@ -49,7 +49,7 @@ form{
 .photo{
   padding-left: 30px;
   padding-top: 15px;
-  border-radius:10px;
+  border-radius:10px 10px 10px 10px;
   width: 90px;
 }
 .name{
