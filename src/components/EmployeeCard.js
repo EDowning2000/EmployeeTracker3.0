@@ -7,7 +7,7 @@ function Employee({ firstName, lastName, image, dept, email, phone }){
       <img
         className="photo"
         src ={image}
-        alt= 'Employee Photo'
+        alt= 'Employee portrait'
       />
       <br></br>
         <span className="name">{ firstName } { lastName }</span>
